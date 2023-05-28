@@ -1,29 +1,62 @@
 .shopTitle {
 	margin-top: 100px;
 	text-align: center;
-	font-size: 40px;
+	font-size: 30px;
+	padding: 5px;
+	background-color: rgba(
+		0,
+		0,
+		0,
+		0.466
+	);
+	border-radius: 10px;
+	color: #ffff;
+	margin: 0.5rem;
+	box-shadow: rgba(17, 17, 26, 0.05) 0px
+			1px 0px,
+		rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+h2 {
+	padding: 5px;
+	padding-left: 15px;
+	background-color: rgba(
+		0,
+		0,
+		0,
+		0.466
+	);
+	border-radius: 10px;
+	color: #ffff;
+	margin: 0.5rem;
 }
 .products {
 	width: 100%;
-	height: auto;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	place-items: center;
+	grid-template-columns: 1fr;
+	align-items: center;
+	position: relative;
+	justify-content: center;
 }
 
 .product {
-	border-radius: 15px;
-	width: 300px;
-	height: 350px;
-	margin: 100px;
+	border-radius: 30px;
+	width: 200px;
+	margin: 50px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px
+			50px 100px -20px,
+		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+		rgba(10, 37, 64, 0.35) 0px -2px 6px 0px
+			inset;
 }
 
 .product img {
-	width: 400px;
+	width: 240px;
+	border-radius: 30px;
 }
 
 .product .description {
@@ -44,10 +77,22 @@
 	padding-top: 5px;
 	padding-bottom: 5px;
 	border-radius: 15px;
+	margin-bottom: 20px;
 }
 
 .addToCartBttn:hover {
 	background-color: rgb(19, 19, 19);
 	color: white;
 	cursor: pointer;
+}
+@media screen and (min-width: 1000px) {
+	.products {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.product {
+		width: 280px;
+	}
+	.product img {
+		width: 300px;
+	}
 }
