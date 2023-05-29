@@ -5,6 +5,10 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	border-radius: 10px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 }
 
 .links {
