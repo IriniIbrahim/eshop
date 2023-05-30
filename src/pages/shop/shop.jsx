@@ -2,14 +2,32 @@ import React from "react";
 import { PRODUCTS } from "../../products";
 import { Product } from "./product";
 import "./shop.css";
+import bgvideo from "../../assets/bg.mp4";
 
 export const Shop = () => {
 	return (
 		<div className="shop">
-			<div className="shopTitle">
-				<h1>H&M</h1>
+			<div className="shoptitle">
+				<video
+					className="background-video"
+					autoPlay
+					muted
+					loop
+				>
+					<source
+						src={bgvideo}
+						type="video/mp4"
+					/>
+				</video>
+				<div className="headertext">
+					<p className="text">
+						Summer collection
+					</p>
+				</div>
 			</div>
-			<h2>For Her</h2>
+			<h2 className="filter">
+				For Her
+			</h2>
 			<div className="products">
 				{PRODUCTS.filter(
 					(product) =>
@@ -23,7 +41,9 @@ export const Shop = () => {
 				))}
 			</div>
 
-			<h2>For Him</h2>
+			<h2 className="filter">
+				For Him
+			</h2>
 			<div className="products">
 				{PRODUCTS.filter(
 					(product) =>
