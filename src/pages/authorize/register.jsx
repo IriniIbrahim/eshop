@@ -16,7 +16,9 @@ export const Register = (props) => {
 
 	return (
 		<div className="auth-form-container">
-			<h2>Register</h2>
+			<h2 className="headerstyle">
+				Register
+			</h2>
 			<form
 				className="register-form"
 				onSubmit={handleSubmit}
@@ -59,7 +61,10 @@ export const Register = (props) => {
 					id="password"
 					name="password"
 				/>
-				<button type="submit">
+				<button
+					type="submit"
+					className="submitbtn"
+				>
 					Log In
 				</button>
 			</form>
