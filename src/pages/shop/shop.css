@@ -54,23 +54,22 @@
 	margin: 0.5rem;
 }
 .products {
-	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 
 	align-items: center;
 	/* position: relative; */
 	justify-content: center;
+	margin-left: 100px;
 }
 
 .product {
 	border-radius: 30px;
 	width: 280px;
+	margin: 0px;
 
-	margin: 50px;
 	display: flex;
 	flex-direction: column;
-
 	justify-content: center;
 	align-items: center !important;
 	/* box-shadow: rgba(50, 50, 93, 0.25) 0px

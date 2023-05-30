@@ -54,16 +54,16 @@ export const Login = (props) => {
 				>
 					Log In
 				</button>
+				<button
+					className="link-btn"
+					onClick={() =>
+						navigate("/register")
+					}
+				>
+					Don't have an account?
+					Register here.
+				</button>
 			</form>
-			<button
-				className="link-btn"
-				onClick={() =>
-					navigate("/register")
-				}
-			>
-				Don't have an account? Register
-				here.
-			</button>
 		</div>
 	);
 };

@@ -65,18 +65,18 @@ export const Register = (props) => {
 					type="submit"
 					className="submitbtn"
 				>
-					Log In
+					Register
+				</button>
+				<button
+					className="link-btn"
+					onClick={() =>
+						navigate("/login")
+					}
+				>
+					Already have an account? Login
+					here.
 				</button>
 			</form>
-			<button
-				className="link-btn"
-				onClick={() =>
-					navigate("/login")
-				}
-			>
-				Already have an account? Login
-				here.
-			</button>
 		</div>
 	);
 };
