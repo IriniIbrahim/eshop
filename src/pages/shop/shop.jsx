@@ -8,6 +8,11 @@ export const Shop = () => {
 	return (
 		<div className="shop">
 			<div className="shoptitle">
+				<div className="headertext">
+					<p className="text">
+						Summer collection
+					</p>
+				</div>
 				<video
 					className="background-video"
 					autoPlay
@@ -19,11 +24,6 @@ export const Shop = () => {
 						type="video/mp4"
 					/>
 				</video>
-				<div className="headertext">
-					<p className="text">
-						Summer collection
-					</p>
-				</div>
 			</div>
 			<h2 className="filter">
 				For Her
