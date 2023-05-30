@@ -35,7 +35,7 @@ h2 {
 	display: grid;
 	grid-template-columns: 1fr;
 	align-items: center;
-	position: relative;
+	/* position: relative; */
 	justify-content: center;
 }
 
