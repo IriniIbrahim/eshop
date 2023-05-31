@@ -16,17 +16,21 @@ export const Register = (props) => {
 
 	return (
 		<div className="auth-form-container">
-			<h2 className="headerstyle">
-				Register
-			</h2>
 			<form
 				className="register-form"
 				onSubmit={handleSubmit}
 			>
-				<label htmlFor="name">
+				<h2 className="headerstyle">
+					Register
+				</h2>
+				<label
+					htmlFor="name"
+					className="lblform"
+				>
 					Full name
 				</label>
 				<input
+					className="inputform"
 					value={name}
 					name="name"
 					onChange={(e) =>
@@ -35,10 +39,14 @@ export const Register = (props) => {
 					id="name"
 					placeholder="full Name"
 				/>
-				<label htmlFor="email">
-					email
+				<label
+					htmlFor="email"
+					className="lblform"
+				>
+					Email:
 				</label>
 				<input
+					className="inputform"
 					value={email}
 					onChange={(e) =>
 						setEmail(e.target.value)
@@ -48,10 +56,14 @@ export const Register = (props) => {
 					id="email"
 					name="email"
 				/>
-				<label htmlFor="password">
-					password
+				<label
+					htmlFor="password"
+					className="lblform"
+				>
+					Password:
 				</label>
 				<input
+					className="inputform"
 					value={pass}
 					onChange={(e) =>
 						setPass(e.target.value)

@@ -3,45 +3,44 @@
 	flex-direction: column;
 
 	font-size: 14px;
-	height: 76vh;
+	height: 81.3vh;
 	outline: none;
 	color: #ffffff;
 	align-items: left;
 	text-align: center;
 
 	background-color: #424459;
-	padding: 50px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 60px;
+	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg");
 }
 .login-form,
 .register-form {
 	display: flex;
 	flex-direction: column;
-	border: 1px solid white;
 	border-radius: 10px;
-	padding: 30px;
-	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg");
-	box-shadow: rgba(0, 0, 0, 0.17) 0px -23px
-			25px 0px inset,
-		rgba(0, 0, 0, 0.15) 0px -36px 30px 0px
-			inset,
-		rgba(0, 0, 0, 0.1) 0px -79px 40px 0px
-			inset,
-		rgba(0, 0, 0, 0.06) 0px 2px 1px,
-		rgba(0, 0, 0, 0.09) 0px 4px 2px,
-		rgba(0, 0, 0, 0.09) 0px 8px 4px,
-		rgba(0, 0, 0, 0.09) 0px 16px 8px,
-		rgba(0, 0, 0, 0.09) 0px 32px 16px;
+	padding: 50px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px
+			54px 55px,
+		rgba(0, 0, 0, 0.12) 0px -12px 30px,
+		rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px,
+		rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	/* border: 0.25px solid black; */
 }
 .headerstyle {
 	color: #ffff;
+	font-size: 30px;
+	font-weight: 350;
 }
 
-label {
+.lblform {
 	text-align: left;
 	padding: 0.25rem 0;
 }
 
-input {
+.inputform {
 	margin: 0.5rem 0;
 	padding: 1rem;
 	border: none;
@@ -50,32 +49,30 @@ input {
 
 .link-btn {
 	background: none;
-	color: #7439db;
+	color: #dab1f8;
 	text-decoration: underline;
-}
-
-.link-btn {
 	cursor: pointer;
 	transition: all 200ms linear;
-	color: #00ddeb;
+	margin: 10px;
+	padding: 5px;
 }
 
 .link-btn:hover {
 	text-decoration: none;
-	color: #af40ff;
+	color: #bcb3f6;
 }
 
 .submitbtn {
 	height: 50px;
 	background-image: linear-gradient(
 		144deg,
-		#af40ff,
-		#5b42f3 50%,
-		#00ddeb
+		#dab1f8,
+		#bcb3f6 50%,
+		#abf6fb
 	);
 
-	color: white;
-	border: 1px solid white;
+	color: rgb(0, 0, 0);
+	border: 1px solid rgb(0, 0, 0);
 	border-radius: 8px;
 	margin: 10px;
 	cursor: pointer;
@@ -86,8 +83,15 @@ input {
 .submitbtn:hover {
 	background-image: linear-gradient(
 		144deg,
-		#00ddeb,
-		#5b42f3 50%,
-		#af40ff
+		#abf6fb,
+		#bcb3f6 50%,
+		#dab1f8
 	);
+}
+
+@media screen and (min-width: 700px) {
+	.auth-form-container {
+		padding-left: 200px;
+		padding-right: 200px;
+	}
 }

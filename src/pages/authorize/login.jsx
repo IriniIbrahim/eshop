@@ -15,17 +15,21 @@ export const Login = (props) => {
 
 	return (
 		<div className="auth-form-container">
-			<h2 className="headerstyle">
-				Login
-			</h2>
 			<form
 				className="login-form"
 				onSubmit={handleSubmit}
 			>
-				<label htmlFor="email">
-					email
+				<h2 className="headerstyle">
+					Login
+				</h2>
+				<label
+					htmlFor="email"
+					className="lblform"
+				>
+					Email:
 				</label>
 				<input
+					className="inputform"
 					value={email}
 					onChange={(e) =>
 						setEmail(e.target.value)
@@ -35,10 +39,14 @@ export const Login = (props) => {
 					id="email"
 					name="email"
 				/>
-				<label htmlFor="password">
-					password
+				<label
+					htmlFor="password"
+					className="lblform"
+				>
+					Password:
 				</label>
 				<input
+					className="inputform"
 					value={pass}
 					onChange={(e) =>
 						setPass(e.target.value)

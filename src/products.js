@@ -25,8 +25,8 @@ export const PRODUCTS = [
 		id: 2,
 		productName: "Pink Dress",
 		price: 150,
-		productImage: product2,
-		productCategory: 1,
+		productImage: product10,
+		productCategory: 2,
 	},
 	{
 		id: 3,
@@ -39,8 +39,8 @@ export const PRODUCTS = [
 		id: 4,
 		productName: "Mint Dress",
 		price: 300,
-		productImage: product4,
-		productCategory: 1,
+		productImage: product12,
+		productCategory: 2,
 	},
 	{
 		id: 5,
@@ -82,8 +82,8 @@ export const PRODUCTS = [
 		id: 10,
 		productName: "Black Dress",
 		price: 260,
-		productImage: product10,
-		productCategory: 2,
+		productImage: product2,
+		productCategory: 1,
 	},
 	{
 		id: 11,
@@ -96,7 +96,7 @@ export const PRODUCTS = [
 		id: 12,
 		productName: "Black Dress",
 		price: 260,
-		productImage: product12,
-		productCategory: 2,
+		productImage: product4,
+		productCategory: 1,
 	}
 ]
