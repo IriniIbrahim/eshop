@@ -3,6 +3,7 @@ import { PRODUCTS } from "../../products";
 import { Product } from "./product";
 import "./shop.css";
 import bgvideo from "../../assets/bg.mp4";
+import { MagnifyingGlass } from "phosphor-react";
 
 export const Shop = () => {
 	const [
@@ -122,7 +123,10 @@ export const Shop = () => {
 							)
 						}
 					>
-						Search
+						<MagnifyingGlass
+							size={15}
+							weight="bold"
+						/>
 					</button>
 				</div>
 			</div>

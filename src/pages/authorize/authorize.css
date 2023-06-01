@@ -3,7 +3,7 @@
 	flex-direction: column;
 
 	font-size: 14px;
-	height: 81.3vh;
+	/* height: 81.3vh; */
 	outline: none;
 	color: #ffffff;
 	align-items: left;
@@ -14,6 +14,7 @@
 	padding-right: 40px;
 	padding-top: 60px;
 	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg");
+	min-height: 89.5vh;
 }
 .login-form,
 .register-form {
@@ -55,6 +56,7 @@
 	transition: all 200ms linear;
 	margin: 10px;
 	padding: 5px;
+	outline: 0;
 }
 
 .link-btn:hover {
@@ -71,8 +73,8 @@
 		#abf6fb
 	);
 
-	color: rgb(0, 0, 0);
-	border: 1px solid rgb(0, 0, 0);
+	color: #424459;
+	border: 1px solid rgb(255, 255, 255);
 	border-radius: 8px;
 	margin: 10px;
 	cursor: pointer;

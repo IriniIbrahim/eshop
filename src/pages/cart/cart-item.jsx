@@ -46,7 +46,7 @@ export const CartItems = (props) => {
 						}
 					>
 						+
-					</button>{" "}
+					</button>
 				</div>
 			</div>
 		</div>

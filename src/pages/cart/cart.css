@@ -3,18 +3,30 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: #424459;
+	min-height: 89.5vh;
+	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg");
 }
-
+.cartcolor {
+	color: #fff;
+}
 .cartItem {
 	width: 350px;
 	height: 150px;
 	display: flex;
-	background-color: white;
-	align-items: center;
-	box-shadow: 0px 3px 15px
-		rgba(0, 0, 0, 0.2);
+	background-color: rgb(240, 240, 240);
+	/*box-shadow: 0px 3px 15px
+		rgba(0, 0, 0, 0.2); */
 	border-radius: 25px;
 	margin: 30px;
+	align-items: center;
+
+	box-shadow: rgba(0, 0, 0, 0.25) 0px
+			54px 55px,
+		rgba(0, 0, 0, 0.12) 0px -12px 30px,
+		rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px,
+		rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .cartItem img {
@@ -33,12 +45,25 @@
 	text-align: center;
 	justify-content: center;
 	font-weight: bolder;
+	background-color: rgb(240, 240, 240);
+	box-shadow: none;
+	cursor: pointer;
+	border: 1px solid #a9a9a9;
+	padding: 3px;
 }
 .countHandler button {
+	border: 1px solid #a9a9a9;
 	width: 20px;
 	text-align: center;
 	justify-content: center;
 	font-weight: bolder;
+	background-color: rgb(240, 240, 240);
+	box-shadow: none;
+	cursor: pointer;
+	padding: 3px;
+}
+.countHandler button:hover {
+	background: #a9a9a9;
 }
 .checkoutbtn {
 	display: grid;
@@ -50,26 +75,26 @@
 	height: 50px;
 	background-image: linear-gradient(
 		144deg,
-		#af40ff,
-		#5b42f3 50%,
-		#00ddeb
+		#dab1f8,
+		#bcb3f6 50%,
+		#abf6fb
 	);
-
-	color: white;
-	border: 1px solid white;
 	border-radius: 8px;
+
 	margin: 10px;
 	cursor: pointer;
 	font-size: 15px;
 	justify-content: center;
 	align-items: center;
+	color: #424459;
+	border: 1px solid rgb(255, 255, 255);
 }
 .checkout button:hover {
 	background-image: linear-gradient(
 		144deg,
-		#00ddeb,
-		#5b42f3 50%,
-		#af40ff
+		#abf6fb,
+		#bcb3f6 50%,
+		#dab1f8
 	);
 }
 
@@ -79,7 +104,7 @@
 		height: 250px;
 	}
 	.cartItem .description {
-		font-size: 30px;
+		font-size: 20px;
 		margin-left: 30px;
 	}
 	.checkoutbtn {

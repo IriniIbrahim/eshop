@@ -110,14 +110,16 @@
 .addToCartBttn {
 	border: none;
 	outline: 0;
-	display: inline-block;
+	display: inherit;
 	padding: 8px;
 	color: white;
 	background-color: #000;
 	text-align: center;
+	justify-content: center;
 	cursor: pointer;
 	width: 100%;
-	font-size: 18px;
+	font-size: 16px;
+	align-items: center;
 }
 
 .addToCartBttn:hover {
